@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Bitcoin2.0 is a community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding the token. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.">
 <meta name="twitter:title" content="Bitcoin2.0">
 <meta name="twitter:site" content="@bitcoinv2">
-<meta name="twitter:url" content="https://twinance.online">
+<meta name="twitter:url" content="https://bitcoinv2.online">
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 <link href="css/uicons-regular-rounded.css" rel="stylesheet">
@@ -106,10 +106,32 @@ font-size:3.5em;;
 letter-spacing:0px;
     position:relative;
 color:#00FFFF;
-    font-family: 'Orbitron', sans-serif;
-    
+    font-family: 'Orbitron', sans-serif !important;
+    animation: pulsate 2.5s infinite alternate; 
 }
-
+    
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 4px #fff,
+      0 0 5px #00FFFF,
+      0 0 6px #00FFFF,
+      0 0 7px #00FFFF
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+     0 0 0.5px #fff,
+      0 0 1px #fff,
+      0 0 1.5px #fff,
+      0 0 2px #00FFFF,
+      0 0 2.5px #00FFFF,
+      0 0 3px #00FFFF
+  }
+}
     
 .hero-container .hero-description{
 font-size:1.25em;
@@ -185,30 +207,6 @@ font-family:'Orbitron';
       0 0 1px #00FFFF,
       0 0 1px #00FFFF,
       0 0 5px #00FFFF;
-}
-  
-    @keyframes pulsate {
-  100% {
-    /* Larger blur radius */
-    text-shadow:
-      0 0 1px #fff,
-      0 0 3px #fff,
-      0 0 5px #fff,
-      0 0 10px #FF28FF,
-      0 0 20px #FF28FF,
-      0 0 22.5px #FF28FF,
-      0 0 25px #FF28FF
-  }
-  0% {
-    /* Smaller blur radius */
-    text-shadow:
-      0 0 0.5px #fff,
-      0 0 0.75px #fff,
-      0 0 1px #FF28FF,
-      0 0 5px #FF28FF,
-      0 0 7.5px #FF28FF,
-      0 0 10px #FF28FF
-  }
 }
 
 /* ---------------- */
@@ -630,11 +628,11 @@ background: #C758BA;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  animation: spin 3s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 .back{
-  background-image: url("images/logo-with-text.png");
+  background-image: url("images/logo-with-text-3.png");
   width: 100%;
   height: 100%;
 background-repeat: no-repeat;
@@ -642,7 +640,7 @@ background-repeat: no-repeat;
 }
 
 .middle{
-  background-image: url("images/logo-with-text.png");
+  background-image: url("images/logo-with-text-3.png");
   width: 100%;
   height: 100%;
   transform: translateZ(1px);
@@ -653,7 +651,7 @@ background-repeat: no-repeat;
 }
 
 .front{
-    background-image: url("images/logo-with-text.png");
+    background-image: url("images/logo-with-text-3.png");
     height: 100%;
     position: absolute;
     top: 0;
@@ -1065,6 +1063,7 @@ AOS.init({
 
 });
 </script>
+
 
 
 
